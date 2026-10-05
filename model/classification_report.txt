@@ -1,0 +1,11 @@
+              precision    recall  f1-score   support
+
+     Arborio     0.9369    0.9650    0.9507       200
+     Basmati     0.9655    0.9800    0.9727       200
+      Ipsala     0.9950    0.9950    0.9950       200
+     Jasmine     0.9598    0.9550    0.9574       200
+   Karacadag     0.9792    0.9400    0.9592       200
+
+    accuracy                         0.9670      1000
+   macro avg     0.9673    0.9670    0.9670      1000
+weighted avg     0.9673    0.9670    0.9670      1000
