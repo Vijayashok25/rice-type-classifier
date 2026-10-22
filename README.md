@@ -4,6 +4,14 @@ Production-ready Machine Learning web application that classifies 5 varieties of
 
 ---
 
+## 📸 Sample Output Screenshot
+
+![Rice Type Classifier Web Application UI](assets/sample_output.png)
+
+*Figure 1: Full-stack Web Application dashboard displaying real-time rice classification (Basmati with 97.63% confidence), certainty progress bar, multi-class probability breakdown, and SQLite prediction history table.*
+
+---
+
 ## 🌾 Features
 
 1. **Rice Grain Image Upload & Preview**: Drag-and-drop or select an image file (`JPG`, `PNG`, `WEBP`) with instantaneous UI preview.

@@ -143,6 +143,11 @@ def serve_model_files(filename):
     """Serves generated model evaluation files (plots, confusion matrix)."""
     return send_from_directory('model', filename)
 
+@app.route('/assets/<path:filename>')
+def serve_assets(filename):
+    """Serves static project assets (samples, screenshots)."""
+    return send_from_directory('assets', filename)
+
 @app.route('/health', methods=['GET'])
 def health_check():
     return jsonify({

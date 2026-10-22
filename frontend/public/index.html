@@ -115,6 +115,22 @@
 
       useEffect(() => {
         fetchHistory();
+        const params = new URLSearchParams(window.location.search);
+        if (params.get('demo') === 'true') {
+          setImagePreview('/assets/sample_basmati.jpg');
+          setSelectedFile({ name: 'sample_basmati.jpg' });
+          setPrediction({
+            predicted_class: 'Basmati',
+            confidence: 97.63,
+            probabilities: {
+              'Arborio': 0.00,
+              'Basmati': 97.63,
+              'Ipsala': 0.00,
+              'Jasmine': 2.36,
+              'Karacadag': 0.00
+            }
+          });
+        }
       }, []);
 
       const handleFileChange = (file) => {
